@@ -5,7 +5,8 @@
     --yellowLight: #fffef8;
     --black: #1F271B;
     --red: #EE4266;
-    --purple: #540D6E;
+    --purple: #330544;
+   /*  --purple: #540D6E;*/
 
     --fontColor: #333;
     --font1: "Madimi One", sans-serif;
@@ -16,8 +17,8 @@
     --indexBase:70;
 
     --headerHeight: 9rem;
-    --headingHeight: 6rem;
-    --menuHeight: 3rem;
+    --headingHeight: 6.05rem;
+    --menuHeight: 2.8rem;
     --footerHeight: 3.2rem;
 
     /* Mobile vars */

@@ -36,5 +36,15 @@
     .container{
         height: var(--headerHeight);
     }
+    .content{
+        height: var(--headingHeight);
+    }
+    .logoContainer{
+        height: calc(var(--headingHeight) - 1.6rem);
+        padding: 0.8rem;
+    }
+    .title{
+        font-size: 2.6rem;
+    }
 }
 
