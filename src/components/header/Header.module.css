@@ -2,23 +2,31 @@
 
 .container{
     display: flex;
+    position: fixed;
     justify-content: center;
-    height: var(--headerHeight);
+    width: 100%;
+    height: var(--headerHeightM);
     flex-direction: column;
     align-items: center;
+    background: var(--yellow);
+    border-bottom: 0.15rem var(--black) solid;
+    box-sizing: border-box;
 }
 
 .content{
     display:flex;
     align-items: center;
-    height: var(--headingHeight);
+    height: var(--headerHeightM);
 }
 
 .logoContainer{
-    height: var(--headingHeight);
+    height: calc(var(--headerHeightM) - 1.6rem);
+    padding: 0.8rem;
 }
 
 .title{
     font-family: var(--font1);
+    font-size: 2.05rem;
+    user-select: none;
 }
 
