@@ -1,0 +1,10 @@
+@import "Globals.css";
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: var(--font2);
+  font-size: 0.81rem;
+}

@@ -1,0 +1,16 @@
+/*  VARIABLES */
+:root{
+    --titleSize: 1.2rem;
+    --color: #333;
+    --font1: "Madimi One", sans-serif;
+    --font2: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    --headerHeight: 9rem;
+    --headingHeight: 6rem;
+    --menuHeight: 3rem;
+
+    /* BREAKPOINTS */
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl: 1200px;
+}
