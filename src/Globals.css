@@ -2,16 +2,25 @@
 :root{
     --titleSize: 1.2rem;
     --yellow: #ffd23f;
-    --yellowLight: #fffef1;
+    --yellowLight: #fffef8;
     --black: #1F271B;
     --red: #EE4266;
     --purple: #540D6E;
+
     --fontColor: #333;
     --font1: "Madimi One", sans-serif;
     --font2: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    --indexTop:100;
+    --indexMedium:90;
+    --indexLow:80;
+    --indexBase:70;
+
     --headerHeight: 9rem;
-    --headerHeightM: 5rem;
     --headingHeight: 6rem;
-    --footerHeightM: 3rem;
     --menuHeight: 3rem;
+    --footerHeight: 3.2rem;
+
+    /* Mobile vars */
+    --headerHeightM: 5.2rem;
+    --footerHeightM: 3.2rem;
 }

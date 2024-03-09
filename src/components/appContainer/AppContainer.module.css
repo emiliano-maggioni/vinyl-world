@@ -7,4 +7,9 @@
     box-sizing: border-box;
 }
 
-
+@media screen and (min-width: 768px) {
+    .container{
+        min-height: calc(100vh - var(--headerHeight) - var(--footerHeight));
+        padding: calc(var(--headerHeight) + 0.6rem) 1rem 1rem 1rem;
+    }
+}

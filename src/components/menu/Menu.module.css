@@ -30,6 +30,11 @@
   visibility: visible;
   left: 0;
 }
+.menuToggle:checked ~ .menuBtn > span,
+.menuToggle:checked ~ .menuBtn > span::before,
+.menuToggle:checked ~ .menuBtn > span::after {
+  background: var(--yellowLight);
+}
 
 /* SANDWICH BUTTON */
 .menuBtn {
@@ -41,7 +46,7 @@
   width: 2rem;
   height: 2rem;
   cursor: pointer;
-  z-index: 1;
+  z-index: var(--indexTop);
 }
 
 .menuBtn > span,
@@ -50,9 +55,10 @@
   display: block;
   position: absolute;
   width: 2rem;
-  height: 3px;
-  background-color: var(--black);
+  height: 0.24rem;
+  background: var(--black);
   transition-duration: .25s;
+  border-radius: 2rem;
 }
 .menuBtn > span::before {
   content: '';
@@ -75,24 +81,28 @@
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #ECEFF1;
+  background: var(--black);
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   transition-duration: .25s;
 }
 
 .menuItem {
   display: block;
-  padding: 12px 24px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
+  padding: 1rem 1.5rem;
+  color:  var(--yellowLight);
+  /* font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 600; */
   text-decoration: none;
   transition-duration: .25s;
+  font-weight: 600;
+  letter-spacing: 0.14rem;
+  font-size: 1.48rem;
 }
 
 .menuItem:hover {
-  background-color: #CFD8DC;
+  background: var(--yellow);
+  color:  var(--black);
 }
 
 @media screen and (min-width: 768px) {

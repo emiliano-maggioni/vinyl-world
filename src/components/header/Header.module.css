@@ -11,6 +11,7 @@
     background: var(--yellow);
     border-bottom: 0.15rem var(--black) solid;
     box-sizing: border-box;
+    z-index: var(--indexMedium);
 }
 
 .content{
@@ -28,5 +29,12 @@
     font-family: var(--font1);
     font-size: 2.05rem;
     user-select: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container{
+        height: var(--headerHeight);
+    }
 }
 
