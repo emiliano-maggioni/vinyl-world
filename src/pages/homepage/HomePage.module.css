@@ -2,24 +2,21 @@
 
 .container{
     display: flex;
-    align-items: center;
-    justify-content: center;
     width:100%;
-    height: var(--footerHeightM);
-    background:var(--purple);
-    color:var(--yellowLight);
-    overflow: hidden;
-    position: relative;
+    flex-direction: column;
 }
 
-.container span{
-     font-size:0.81rem;
- }
+.topbar{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
 
 
-@media screen and (min-width: 768px) {
-    .container{
-
+  @media screen and (min-width: 576px) {
+    .topbar{
+      flex-direction: row-reverse;
+      justify-content: space-between;
     }
-
-}
+  }

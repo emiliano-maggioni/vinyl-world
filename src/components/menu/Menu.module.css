@@ -82,7 +82,7 @@
   padding: 5rem 0;
   list-style: none;
   background: var(--black);
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  /* box-shadow: 1px 0px 6px rgba(0, 0, 0, .2); */
   transition-duration: .25s;
 }
 
@@ -127,7 +127,8 @@
     visibility: visible;
     top: 0;
     left: 0px;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px; 
     height: var(--menuHeight);
     padding: 0rem 1rem;
     justify-content: center;
