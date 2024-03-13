@@ -5,13 +5,12 @@
     width:100%;
     column-gap: 1%;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 
 .container > article{
     flex-basis: 100%;
-    margin-bottom: 2.8rem;
+    margin-bottom: 3.8rem;
 }
 
 
@@ -26,6 +25,8 @@
 
     .container > article{
         flex-basis: 23%;
+        justify-content: flex-start;
+        margin-bottom: 2.8rem;
     }
 }
 

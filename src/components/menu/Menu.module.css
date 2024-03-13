@@ -105,6 +105,7 @@
 .menuItem:hover {
   background: var(--yellow);
   color:  var(--black);
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (min-width: 768px) {
@@ -128,7 +129,7 @@
     top: 0;
     left: 0px;
     width: 100%;
-    max-width: 1200px; 
+    max-width: var(--maxContentWidth);
     height: var(--menuHeight);
     padding: 0rem 1rem;
     justify-content: center;

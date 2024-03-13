@@ -41,6 +41,7 @@
 .btContainer{
     display: flex;
     padding-top: 1.4rem;
+    justify-content: center;
 }
 
 .btContainer > button{
@@ -48,8 +49,9 @@
 }
 
 @media screen and (min-width: 768px) {
-    .container{
 
+    .title{
+        min-height: 4rem;
     }
 }
 

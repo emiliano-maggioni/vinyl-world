@@ -1,44 +1,12 @@
 @import "Globals.css";
 
-.container{
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    flex-direction: column;
+/* .button:hover{
+    opacity:0.7;
+} */
+.button > svg{
+    padding-left:0.8rem;
 }
-
-.cover{
-    display: flex;
-    width: 100%;
-    border: 1px var(--black) solid;
-    box-sizing: border-box;
-}
-
-.cover > img{
-    width: 100%;
-}
-
-.title{
-    font-size: 1.76rem;
-    font-weight: 500;
-    line-height: 2rem;
-    margin: 0.27rem 0rem;
-    font-family: var(--font1);
-}
-
-.band{
-    margin: 0rem 0rem 0.6rem;
-}
-
-.price{
-    font-size: 1.15rem;
-    font-weight: bold;
-}
-
 
 @media screen and (min-width: 768px) {
-    .container{
 
-    }
 }
-

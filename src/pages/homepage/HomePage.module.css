@@ -7,16 +7,33 @@
 }
 
 .topbar{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.4rem 0rem 2.6rem 0rem;
+}
+
+.topbar > div{
+  width: 100%;
+}
+
+.topbar > div:first-child{
+  margin-bottom:1.8rem;
+}
 
 
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 768px) {
     .topbar{
-      flex-direction: row-reverse;
       justify-content: space-between;
+    }
+    .topbar > div:first-child{
+      width: auto;
+      flex: 1;
+      max-width: 30rem;
+    }
+    .topbar > div:last-child{
+      max-width: 15rem;
+      margin-left: 1rem;
     }
   }

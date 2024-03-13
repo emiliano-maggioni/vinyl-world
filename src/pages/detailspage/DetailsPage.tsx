@@ -13,8 +13,21 @@ const Detailspage = () => {
         if(item.length > 0)
             setDataList(item[0]);
     },[]);
+    const addItemToCart = (id:number) => {
 
-    return ((dataList ? <ItemDetails id={dataList.id} title={dataList.title} band={dataList.band} year={dataList.year} price={dataList.price} imgName={dataList.imgName} desc={dataList.desc} />
+    };
+
+    return ((dataList ? (
+            <ItemDetails
+                id={dataList.id}
+                title={dataList.title}
+                band={dataList.band}
+                year={dataList.year}
+                price={dataList.price}
+                imgName={dataList.imgName}
+                desc={dataList.desc}
+                handleClick={()=> addItemToCart(dataList.id)}
+            />)
          : <>Not found</>)
     );
 }

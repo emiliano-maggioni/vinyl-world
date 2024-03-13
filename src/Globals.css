@@ -1,12 +1,16 @@
 /*  VARIABLES */
 :root{
     --titleSize: 1.2rem;
-    --yellow: #ffd23f;
-    --yellowLight: #fffef8;    
+    --yellow: #ffdd6f;
+    /*--yellow: #ffd23f;*/
+    --yellowLight: #fffef8;
     --grayLight: #fbf9f2;
     --black: #1F271B;
+    --green: #00755f;
+    --greenLight: #00a788;
     --red: #EE4266;
     --purple: #330544;
+    --purple2: #5d0c7a;
    /*  --purple: #540D6E;*/
 
     --fontColor: #333;
@@ -17,6 +21,7 @@
     --indexLow:80;
     --indexBase:70;
 
+    --maxContentWidth: 1200px;
     --headerHeight: 9rem;
     --headingHeight: 6.05rem;
     --menuHeight: 2.8rem;

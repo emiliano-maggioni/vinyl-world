@@ -9,8 +9,8 @@ const AppContainer = () => {
         <>
             <Header />
             <main className={classes.container} >
-                {/* <HomePage /> */}
-                <Detailspage />
+                <HomePage />
+                {/* <Detailspage /> */}
             </main>
             <Footer />
         </>
