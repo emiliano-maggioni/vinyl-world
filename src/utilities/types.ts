@@ -41,7 +41,7 @@ export interface CartItemProps{
     quantity?: number;
     year: number;
     imgName: string;
-    handleClick?: Function;
+    handleClick: Function;
 }
 
 export interface UserInfoProps{
@@ -68,6 +68,4 @@ export interface LoginForm{
     password: string;
 }
 
-export type UserLogged = {
-    email?:string;
-}
+export type UserLogged = string | null;

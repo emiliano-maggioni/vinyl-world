@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Item from "components/item/Item";
 import classes from "./HomePage.module.css";
 import ItemContainer from "components/itemContainer/ItemContainer";
@@ -7,6 +7,7 @@ import SearchField from "components/searchField/SearchField";
 import SelectField from "components/selectField/SelectField";
 import { ItemProps } from "utilities/types";
 import { useNavigate } from "react-router-dom";
+import { AppContext } from "context/AppContext";
 
 const Homepage = () => {
     const [dataList, setDataList] = useState<ItemProps[] | []>([]);
@@ -14,6 +15,7 @@ const Homepage = () => {
     const [orderType, setOrderType] = useState<string>('');
     const options = [{ value: 'PRICE_DESC', label:'Price descending'},{ value: 'PRICE_ASC', label:'Price ascending'}];
     let navigate = useNavigate();
+    const appContext = useContext(AppContext);
     useEffect(()=>{
         let results = [...vinylData];
         if(searchFilter)
@@ -29,7 +31,7 @@ const Homepage = () => {
 
     },[searchFilter,orderType]);
     const addItemToCart = (id:number) => {
-        console.log(id);
+        appContext.addItemToCart(id);
     };
     const filterResults = (filter:string) => {
         setSearchFilter(filter);

@@ -14,7 +14,7 @@ const CartItem = ({id, title, band, price, imgName, quantity = 1, handleClick}: 
                     <span className={classes.price}>{price} €</span>
                     <span className={classes.qty}><strong>Quantity:</strong> {quantity} </span>
                 </div>
-                <CloseRoundedIcon className={classes.removeIcon} onClick={()=> alert('remove')} />
+                <CloseRoundedIcon className={classes.removeIcon} onClick={()=> handleClick(id)} />
         </article>
     );
 }
