@@ -4,6 +4,7 @@
     --yellow: #ffdd6f;
     /*--yellow: #ffd23f;*/
     --yellowLight: #fffef8;
+    --beige: #cfc79b;
     --grayLight: #fbf9f2;
     --black: #1F271B;
     --green: #00755f;
@@ -29,5 +30,6 @@
 
     /* Mobile vars */
     --headerHeightM: 5.2rem;
+    --userInfoHeightM: 1.4rem;
     --footerHeightM: 3.2rem;
 }

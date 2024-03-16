@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import classes from "./ButtonBase.module.css";
 import { ButtonBaseProps } from "utilities/types";
 
-const ButtonBase = ({ text="Confirm", icon, handleClick}: ButtonBaseProps) => {
+const ButtonBase = ({ text="Confirm", icon, handleClick  = () => { }, type = "button" }: ButtonBaseProps) => {
     const style = {
         "&": {
             backgroundColor: "var(--green)",
@@ -15,7 +15,7 @@ const ButtonBase = ({ text="Confirm", icon, handleClick}: ButtonBaseProps) => {
             },
         },
     };
-    return ( <Button sx={style} className={classes.button}  variant="contained" onClick={() => handleClick()}>{text}{icon}</Button>);
+    return ( <Button sx={style} className={classes.button}  variant="contained" onClick={handleClick} type={type} >{text}{icon}</Button>);
 }
 
 export default ButtonBase;

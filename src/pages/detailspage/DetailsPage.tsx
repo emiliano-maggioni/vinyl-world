@@ -4,10 +4,12 @@ import classes from "./DetailsPage.module.css";
 import vinylData from "utilities/vinyls.json";
 import { Item } from "utilities/types";
 import ItemDetails from "components/itemDetails/ItemDetails";
+import { useParams } from "react-router-dom";
 
 const Detailspage = () => {
+    let { id } = useParams();
     const [dataList, setDataList] = useState<Item | null>(null);
-    const itemId = 10;
+    const itemId = id;
     useEffect(()=>{
         const item = vinylData.filter((el:Item) => el.id == itemId);
         if(item.length > 0)

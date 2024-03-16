@@ -10,9 +10,7 @@
 .cover{
     display: flex;
     flex: 1;
-    border: 1px var(--black) solid;
-    box-sizing: border-box;
-    cursor: pointer;
+    align-items: flex-start;
 }
 
 .infoColumn{
@@ -23,6 +21,8 @@
 
 .cover > img{
     width: 100%;
+    border: 1px var(--black) solid;
+    box-sizing: border-box;
 }
 
 .title{
@@ -31,7 +31,6 @@
     line-height: 2rem;
     margin: 0.44rem 0rem 0.24rem 0rem;
     font-family: var(--font1);
-    cursor: pointer;
 }
 
 .band{
@@ -72,6 +71,9 @@
 @media screen and (min-width: 768px) {
     .container{
         flex-direction: row;
+    }
+    .cover {
+        margin-right: 1.4rem;
     }
 }
 

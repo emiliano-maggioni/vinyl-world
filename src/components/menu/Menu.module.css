@@ -71,19 +71,25 @@
 
 /* MENU */
 .menuBox {
-  display: block;
+  display: flex;
   position: fixed;
+  flex-direction: column;
   visibility: hidden;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 5rem 0;
+  padding: 5rem 0rem 1.5rem 0rem;
+  box-sizing: border-box;
   list-style: none;
   background: var(--black);
-  /* box-shadow: 1px 0px 6px rgba(0, 0, 0, .2); */
   transition-duration: .25s;
+  justify-content: flex-start;
+}
+
+.menuBox > li:last-child{
+  margin-top: auto;
 }
 
 .menuItem {
@@ -92,9 +98,6 @@
   height: 3.37rem;
   align-items: center;
   color:  var(--yellowLight);
-  /* font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 600; */
   text-decoration: none;
   transition-duration: .25s;
   font-weight: 600;
@@ -108,8 +111,11 @@
   transition: all 0.3s ease-in;
 }
 
+.logoutBt{
+  margin-left: 0.8rem;
+}
+
 @media screen and (min-width: 768px) {
-  
   .menuBtn {
     display: none;
   }
@@ -123,7 +129,7 @@
   }
 
   .menuBox {
-    display: flex;
+    flex-direction: row;
     position: relative;
     visibility: visible;
     top: 0;

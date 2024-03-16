@@ -1,0 +1,67 @@
+@import "Globals.css";
+
+.container{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+}
+
+.itemsContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 0.3rem;
+}
+
+.itemsContainer > article:first-child{
+  padding-top:0rem;
+}
+
+.itemsContainer > article:nth-child(even){
+  background: var(--grayLight);
+}
+
+
+.resumeContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 0.3rem;
+  margin-top: 0.6rem;
+}
+
+
+.resumeContainer > h3{
+  margin: 0.4rem 0rem;
+  font-family: var(--font1);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.resumeContainer > div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.resumeContainer > button{
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 2.1rem;
+  max-width: 17rem;
+  width: 100%;
+}
+
+
+@media screen and (min-width: 992px) {
+  .container{
+      flex-direction: row;
+  }
+  .resumeContainer{
+    width: 45%;
+    margin-top: 0.6rem;
+    margin-left: 1.6rem;
+    max-width: 23rem;
+  }
+  .resumeContainer > button{
+    max-width: 100%;
+  }
+}

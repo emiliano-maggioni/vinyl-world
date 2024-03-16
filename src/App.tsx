@@ -1,11 +1,13 @@
-import React from 'react';
 import "Normalize.css";
 import 'App.css';
 import AppContainer from "components/appContainer/AppContainer";
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <AppContainer />
+      <BrowserRouter>
+        <AppContainer />
+      </BrowserRouter>
   );
 }
 

@@ -18,6 +18,7 @@ const SearchField = ({handleChange}:any) => {
           fontFamily: "var(--font2)"
         },
         "& .MuiOutlinedInput-root": {
+          background: 'var(--yellowLight)',
           "&.Mui-focused fieldset": {
             borderColor: "var(--purple2)",
             borderWidth: '1px'

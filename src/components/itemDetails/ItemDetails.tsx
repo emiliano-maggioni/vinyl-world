@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import classes from "./ItemDetails.module.css";
 import { Item } from "utilities/types";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
@@ -16,7 +15,7 @@ const ItemDetails = ({id, title, band, price, year, imgName, desc, handleClick}:
                     <div className={classes.year}>Released in <strong>{year}</strong></div>
                     <span className={classes.price}>{price} €</span>
                     <div className={classes.btContainer}>
-                        <ButtonBase text="Add to Cart" handleClick={handleClick!} icon={<ShoppingCartOutlinedIcon />} />
+                        <ButtonBase text="Add to Cart" handleClick={handleClick} icon={<ShoppingCartOutlinedIcon />} />
                     </div>
                     <div className={classes.description}><span>Description:</span>{desc}</div>
                 </div>
