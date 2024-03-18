@@ -2,11 +2,11 @@ import classes from "./CartItem.module.css";
 import { CartItemProps } from "utilities/types";
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 
-const CartItem = ({id, title, band, price, imgName, quantity = 1, handleClick}: CartItemProps) => {
+const CartItem = ({id, title, band, price, imgName, quantity, handleClick}: CartItemProps) => {
     return (
         <article className={classes.container} key={id} >
                 <figure className={classes.cover}>
-                     <img src={`/images/vinyls/${imgName}.jpg`} alt="Logo - Vinyl World" />
+                     <img src={`/images/vinyls/${imgName}.jpg`} alt={`${title} - Vinyl World`} />
                 </figure>
                 <div  className={classes.infoBox}>
                     <h3 className={classes.title}>{title}</h3>

@@ -1,14 +1,12 @@
 import classes from "./ItemContainer.module.css";
 type Props = {
-    // title: string,
-    // children: JSX.Element,
-    children: any,
-  };
+    children: React.ReactNode,
+};
 
 const ItemContainer = ({  children }: Props) => {
     return (<section className={classes.container}>
-            {children}
-        </section>
+                {children}
+            </section>
     );
 }
 

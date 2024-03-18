@@ -87,6 +87,7 @@
   transition-duration: .25s;
   justify-content: flex-start;
 }
+.menuBox li > a{ cursor: pointer; }
 
 .userInfo{
   margin-top: auto;

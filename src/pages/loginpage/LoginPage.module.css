@@ -23,7 +23,7 @@
 }
 
 .form > div:nth-child(even){
-    background: var(--grayLight);
+    background: var(--grayLight2);
 }
 
 .title{

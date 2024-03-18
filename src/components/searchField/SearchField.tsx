@@ -20,7 +20,7 @@ const SearchField = ({handleChange}:any) => {
         "& .MuiOutlinedInput-root": {
           background: 'var(--yellowLight)',
           "&.Mui-focused fieldset": {
-            borderColor: "var(--purple2)",
+            borderColor: "var(--greenLight)",
             borderWidth: '1px'
           },
           "& .MuiOutlinedInput-notchedOutline": {
@@ -29,7 +29,7 @@ const SearchField = ({handleChange}:any) => {
           }
         },
         "& label.Mui-focused": {
-          color: "var(--purple2)"
+          color: "var(--greenLight)"
         },
     };
 

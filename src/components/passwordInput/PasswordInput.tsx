@@ -14,12 +14,12 @@ const PasswordInput = ({errorMessage = "Insert a correct password", id, label, r
             borderWidth: '1px'
           },
           "& .Mui-focused .MuiOutlinedInput-notchedOutline": {
-            borderColor: "var(--purple2)",
+            borderColor: "var(--greenLight)",
             borderWidth: '1px'
           }
         },
         "& label.Mui-focused": {
-          color: "var(--purple2)"
+          color: "var(--greenLight)"
         },
     };
 

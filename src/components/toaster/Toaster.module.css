@@ -1,0 +1,11 @@
+@import "Globals.css";
+
+.container {
+    margin-top: var(--contentPaddingTopM);
+    opacity:0.96;
+}
+
+@media screen and (min-width: 768px) {
+    .container {  margin-top: var(--contentPaddingTop);  }
+}
+

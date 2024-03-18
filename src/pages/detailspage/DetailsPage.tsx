@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-
-import classes from "./DetailsPage.module.css";
+import { useState, useEffect, useContext } from "react";
 import vinylData from "utilities/vinyls.json";
 import { Item } from "utilities/types";
 import ItemDetails from "components/itemDetails/ItemDetails";
 import { useParams } from "react-router-dom";
+import { AppContext } from "context/AppContext";
 
 const Detailspage = () => {
-    let { id } = useParams();
     const [dataList, setDataList] = useState<Item | null>(null);
+    const appContext = useContext(AppContext);
+    let { id } = useParams();
     const itemId = id;
     useEffect(()=>{
         const item = vinylData.filter((el:Item) => el.id == itemId);
@@ -16,7 +16,8 @@ const Detailspage = () => {
             setDataList(item[0]);
     },[]);
     const addItemToCart = (id:number) => {
-
+        appContext.addItemToCart(id);
+        appContext.changeToasterState({ openToaster: true, message: "Vinyl added to cart.", severity: "success" });
     };
 
     return ((dataList ? (

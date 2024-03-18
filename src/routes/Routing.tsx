@@ -7,10 +7,10 @@ import LoginPage from 'pages/loginpage/LoginPage';
 const Routing = () => {
   return (
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/cart" element={<CartPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/album/:id" element={<Detailspage />} />
+        <Route key="/" path="/" element={<HomePage />} />
+        <Route key="/cart" path="/cart" element={<CartPage />} />
+        {["/login", "/complete-checkout"].map(path => <Route key={path} path={path} element={<LoginPage />} />)}
+        <Route key="/album/:id" path="/album/:id" element={<Detailspage />} />
       </Routes>
   );
 }

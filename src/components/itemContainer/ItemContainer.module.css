@@ -24,7 +24,7 @@
 @media screen and (min-width: 768px) {
 
     .container > article{
-        flex-basis: 23%;
+        flex-basis: 24%;
         justify-content: flex-start;
         margin-bottom: 2.8rem;
     }

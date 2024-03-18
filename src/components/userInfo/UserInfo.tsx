@@ -1,6 +1,7 @@
 import classes from "./UserInfo.module.css";
 import { UserInfoProps } from "utilities/types";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
 const UserInfo = ({email}: UserInfoProps) => {
     return (
         <div className={classes.container}>

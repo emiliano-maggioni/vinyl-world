@@ -18,6 +18,7 @@
     display:flex;
     align-items: center;
     height: var(--headerHeightM);
+    cursor: pointer;
 }
 
 .logoContainer{

@@ -14,7 +14,7 @@ const Homepage = () => {
     const [searchFilter, setSearchFilter] = useState<string>('');
     const [orderType, setOrderType] = useState<string>('');
     const options = [{ value: 'PRICE_DESC', label:'Price descending'},{ value: 'PRICE_ASC', label:'Price ascending'}];
-    let navigate = useNavigate();
+    const navigate = useNavigate();
     const appContext = useContext(AppContext);
     useEffect(()=>{
         let results = [...vinylData];
@@ -32,6 +32,7 @@ const Homepage = () => {
     },[searchFilter,orderType]);
     const addItemToCart = (id:number) => {
         appContext.addItemToCart(id);
+        appContext.changeToasterState({ openToaster: true, message: "Vinyl added to cart.", severity: "success" });
     };
     const filterResults = (filter:string) => {
         setSearchFilter(filter);
@@ -42,7 +43,7 @@ const Homepage = () => {
 
 
     return (
-        <div className={classes.container}>
+        <section className={classes.container}>
             <div className={classes.topbar}>
                 <SearchField handleChange={filterResults} /><SelectField options={options} name="orderby" placeholder="Order by" handleOrderChange={handleOrderChange} />
             </div>
@@ -63,7 +64,7 @@ const Homepage = () => {
                     )
                     : (<p>No results found.</p>)}
             </ItemContainer>
-        </div>
+        </section>
     );
 
 }

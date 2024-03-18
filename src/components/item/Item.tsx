@@ -7,7 +7,7 @@ const Item = ({id, title, band, price, imgName, handleClick, handleClickDetails}
     return (
         <article className={classes.container} key={id} >
                 <figure className={classes.cover} onClick={() => handleClickDetails!()}>
-                     <img src={`/images/vinyls/${imgName}.jpg`} alt="Logo - Vinyl World" />
+                     <img src={`/images/vinyls/${imgName}.jpg`} alt={`${title} - Vinyl World`} />
                 </figure>
                 <h3 className={classes.title} onClick={() => handleClickDetails!()}>{title}</h3>
                 <p className={classes.band}>{band}</p>

@@ -32,7 +32,6 @@
         right: 0rem;
         font-size: 0.782rem;
         color:  var(--beige);
-        /* color:  var(--black); */
     }
     .info{
         display: flex;

@@ -5,9 +5,9 @@ import ButtonBase from "components/ButtonBase/ButtonBase";
 
 const ItemDetails = ({id, title, band, price, year, imgName, desc, handleClick}: Item) => {
     return (
-        <article className={classes.container} key={id} >
+        <section className={classes.container} key={id} >
                 <figure className={classes.cover}>
-                     <img src={`/images/vinyls/${imgName}.jpg`} alt="Logo - Vinyl World" />
+                     <img src={`/images/vinyls/${imgName}.jpg`} alt={`${title} - Vinyl World`} />
                 </figure>
                 <div className={classes.infoColumn}>
                     <h3 className={classes.title}>{title}</h3>
@@ -19,7 +19,7 @@ const ItemDetails = ({id, title, band, price, year, imgName, desc, handleClick}:
                     </div>
                     <div className={classes.description}><span>Description:</span>{desc}</div>
                 </div>
-        </article>
+        </section>
     );
 }
 

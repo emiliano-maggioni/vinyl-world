@@ -48,14 +48,31 @@
     justify-content: center;
 }
 
-.btContainer > button{
-    margin-right: 0.8rem;
+@media screen and (min-width: 768px) {
+    .title{
+        min-height: 3.7rem;
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+
+    .btContainer > button{
+        font-size: 0.82rem;
+        letter-spacing: 1px;
+        padding: 0.6rem 1rem;
+     }
 }
 
-@media screen and (min-width: 768px) {
 
+@media screen and (min-width: 1200px) {
     .title{
         min-height: 4rem;
+        font-size: 1.76rem;
+        line-height: 2rem;
+    }
+
+    .btContainer > button{
+        font-size: 1.25rem;
+        letter-spacing:0.1rem;
+        padding: 0.4rem 1.4rem;
     }
 }
-

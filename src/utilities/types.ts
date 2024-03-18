@@ -33,15 +33,23 @@ export interface SelectProps{
     handleOrderChange?:Function;
 }
 
-export interface CartItemProps{
+export interface CartItemType{
     id: any;
     title: string;
     band: string;
     price: number;
-    quantity?: number;
+    quantity: number;
     year: number;
     imgName: string;
+}
+
+export interface CartItemProps extends CartItemType{
     handleClick: Function;
+}
+
+export interface CartResume{
+    totalPrice: number;
+    totalItems: number;
 }
 
 export interface UserInfoProps{
@@ -69,3 +77,13 @@ export interface LoginForm{
 }
 
 export type UserLogged = string | null;
+
+export type ToasterStateProps = {
+    openToaster: boolean;
+    message: string;
+    severity: "error" | "warning" | "info" | "success";
+    duration?: number;
+}
+export interface ToasterProps extends ToasterStateProps{
+    handleClose:any;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -16,15 +16,15 @@ const SelectField = ({placeholder = "Select", defaultOption = "Select", name, op
             borderWidth: '1px'
           },
           "&.Mui-focused fieldset": {
-            borderColor: "var(--purple2)",
+            borderColor: "var(--greenLight)",
             borderWidth: '1px'
           }
         },
         "& label.Mui-focused": {
-          color: "var(--purple2)"
+          color: "var(--greenLight)"
         },
         "& .MuiPopover-paper": {
-          backgroundColor: "var(--purple2) !important"
+          backgroundColor: "var(--greenLight) !important"
         },
     };
 
@@ -49,7 +49,7 @@ const SelectField = ({placeholder = "Select", defaultOption = "Select", name, op
           label={placeholder}
           name={name}
           value={fieldValue}
-          onChange={(e:any) => handleChange(e)}
+          onChange={(e: SelectChangeEvent<string>) => handleChange(e)}
         > <MenuItem selected value="">{defaultOption}</MenuItem>
         {options.map((opt) => <MenuItem key={opt.value} value={opt.value} >{opt.label}</MenuItem> )}
         </Select>
