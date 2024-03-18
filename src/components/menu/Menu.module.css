@@ -1,0 +1,158 @@
+@import "Globals.css";
+
+.container{
+  display: flex;
+  justify-content: center;
+  height: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* HTML CHECKBOX THAT MAKE WORK THE MENU */
+.menuToggle {
+  opacity: 0;
+  position:absolute;
+  top: -100vh;
+}
+
+.menuToggle:checked ~ .menuBtn > span {
+  transform: rotate(45deg);
+}
+.menuToggle:checked ~ .menuBtn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+.menuToggle:checked ~ .menuBtn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+.menuToggle:checked ~ .menuBox {
+  visibility: visible;
+  left: 0;
+}
+.menuToggle:checked ~ .menuBtn > span,
+.menuToggle:checked ~ .menuBtn > span::before,
+.menuToggle:checked ~ .menuBtn > span::after {
+  background: var(--yellowLight);
+}
+
+/* SANDWICH BUTTON */
+.menuBtn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 1.5rem;
+  left: 1.2rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  z-index: var(--indexTop);
+}
+
+.menuBtn > span,
+.menuBtn > span::before,
+.menuBtn > span::after {
+  display: block;
+  position: absolute;
+  width: 2rem;
+  height: 0.24rem;
+  background: var(--black);
+  transition-duration: .25s;
+  border-radius: 2rem;
+}
+.menuBtn > span::before {
+  content: '';
+  top: -8px;
+}
+.menuBtn > span::after {
+  content: '';
+  top: 8px;
+}
+
+/* MENU */
+.menuBox {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 5rem 0rem 1.5rem 0rem;
+  box-sizing: border-box;
+  list-style: none;
+  background: var(--black);
+  transition-duration: .25s;
+  justify-content: flex-start;
+}
+.menuBox li > a{ cursor: pointer; }
+
+.userInfo{
+  margin-top: auto;
+}
+
+.menuItem {
+  display: flex;
+  padding: 0rem 1.5rem;
+  height: 3.37rem;
+  align-items: center;
+  color:  var(--yellowLight);
+  text-decoration: none;
+  transition-duration: .25s;
+  font-weight: 600;
+  letter-spacing: 0.14rem;
+  font-size: 1.48rem;
+}
+
+.menuItem:hover {
+  background: var(--yellow);
+  color:  var(--black);
+  transition: all 0.3s ease-in;
+}
+
+.logoutBt{
+  margin-left: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .menuBtn {
+    display: none;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    height: var(--menuHeight);
+    width: 100%;
+    background: var(--black);
+  }
+
+  .menuBox {
+    flex-direction: row;
+    position: relative;
+    visibility: visible;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    max-width: var(--maxContentWidth);
+    height: var(--menuHeight);
+    padding: 0rem 1rem;
+    justify-content: center;
+  }
+  .menuBox > li {
+      display: flex;
+      justify-content: center;
+  }
+
+  .menuItem {
+    display: flex;
+    padding: 0rem 1.5rem;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    justify-content: center;
+    height: var(--menuHeight);
+  }
+
+}

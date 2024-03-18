@@ -1,0 +1,76 @@
+@import "Globals.css";
+
+.container{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0.5rem 0rem;
+}
+
+.cover{
+    display: flex;
+    width: 40%;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.cover > img{
+    width: 100%;
+}
+
+.infoBox{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin: 0rem 1.6rem 0.24rem 0rem;
+    font-family: var(--font1);
+}
+
+.band{
+    margin: 0rem 0rem 0.6rem;
+}
+
+.price{
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    margin-top: auto;
+}
+
+.btContainer{
+    display: flex;
+    padding-top: 1.4rem;
+    justify-content: center;
+}
+
+svg.removeIcon{
+    position: absolute;
+    cursor: pointer;
+    right: 3px;
+    top: 2px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .cover {
+        width: 14rem;
+    }
+    .title{
+            font-size: 1.7rem;
+    }
+    svg.removeIcon {
+        right: 0.35rem;
+        top: 0.2rem;
+        font-size: 1.6rem;
+    }
+}
+

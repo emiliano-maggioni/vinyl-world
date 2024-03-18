@@ -1,0 +1,32 @@
+@import "Globals.css";
+
+.container{
+    display: flex;
+    width:100%;
+    column-gap: 1%;
+    flex-wrap: wrap;
+}
+
+
+.container > article{
+    flex-basis: 100%;
+    margin-bottom: 3.8rem;
+}
+
+
+@media screen and (min-width: 576px) { 
+    .container > article{
+        flex-basis: 48%;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .container > article{
+        flex-basis: 24%;
+        justify-content: flex-start;
+        margin-bottom: 2.8rem;
+    }
+}
+

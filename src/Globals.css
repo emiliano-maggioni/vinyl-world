@@ -1,0 +1,39 @@
+/*  VARIABLES */
+:root{
+    /* Colors */
+    --titleSize: 1.2rem;
+    --yellow: #ffdd6f;
+    --yellowLight: #fffef8;
+    --beige: #cfc79b;
+    --grayLight: #fbf9f2;
+    --grayLight2: #fcfbf6;
+    --black: #1F271B;
+    --green: #00755f;
+    --greenLight: #00a788;
+    --red: #EE4266;
+    --purple: #330544;
+    --purple2: #5d0c7a;
+    --brown: #381403;
+
+    --fontColor: #333;
+    --font1: "Madimi One", sans-serif;
+    --font2: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    /* Indexes */
+    --indexTop:100;
+    --indexMedium:90;
+    --indexLow:80;
+    --indexBase:70;
+    /* Withs and heights */
+    --maxContentWidth: 1200px;
+    --headerHeight: 9rem;
+    --headingHeight: 6.05rem;
+    --menuHeight: 2.8rem;
+    --footerHeight: 3.2rem;
+
+    /* Mobile vars */
+    --headerHeightM: 5.2rem;
+    --footerHeightM: 3.2rem;
+
+    --contentPaddingTopM: calc(var(--headerHeightM) + 1.1rem);
+    --contentPaddingTop: calc(var(--headerHeight) + 1.6rem);
+}

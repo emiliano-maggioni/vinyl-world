@@ -1,0 +1,111 @@
+[
+    {
+        "id": 1,
+        "title": "Born in the USA",
+        "band": "Bruce Springsteen",
+        "price": 20,
+        "year": 1985,
+        "imgName": "born_in_the_usa",
+        "desc": "Born in the U.S.A. is the seventh studio album by the American singer-songwriter Bruce Springsteen, released on June 4, 1984, by Columbia Records. The album was recorded with the E Street Band and producers Chuck Plotkin and Jon Landau over the course of several years, while Springsteen was also working on his previously released album, Nebraska (1982). It features tighter songs with a brighter, more pop-influenced sound than Springsteen's previous albums, and prominent synthesizer, while its lyrics explore themes of working-class struggles, disillusionment, patriotism, and personal relationships. The cover features a photograph of Springsteen from behind, taken by Annie Leibovitz; it has since become one of the musician's most iconic images."
+    },
+    {
+        "id": 2,
+        "title": "Born to Die",
+        "band": "Lana del Rey",
+        "price": 25,
+        "year": 2012,
+        "imgName": "born_to_die",
+        "desc": "Born to Die is the second studio album and major-label debut by American singer-songwriter Lana Del Rey. It was released on January 27, 2012, through Interscope Records and Polydor Records. A reissue of the album, subtitled The Paradise Edition, was released on November 9, 2012. The new material from the reissue was also made available on a separate EP titled Paradise."
+    },
+    {
+        "id": 3,
+        "title": "The Dark Side Of The Moon",
+        "band": "Pink Floyd",
+        "price": 50,
+        "year": 1973,
+        "imgName": "dark_side_of_the_moon",
+        "desc": "The Dark Side of the Moon is the eighth studio album by the English rock band Pink Floyd, released on 1 March 1973 by Harvest Records in the UK and Capitol Records in the US. Developed during live performances before recording began, it was conceived as a concept album that would focus on the pressures faced by the band during their arduous lifestyle, and also deal with the mental health problems of the former band member Syd Barrett, who departed the group in 1968. New material was recorded in two sessions in 1972 and 1973 at EMI Studios (now Abbey Road Studios) in London."
+    },
+    {
+        "id": 4,
+        "title": "Doble Vida",
+        "band": "Soda Stereo",
+        "price": 30,
+        "year": 1988,
+        "imgName": "doble_vida",
+        "desc": "Doble Vida (Spanish for Double Life) is the fourth album recorded by Argentine rock band Soda Stereo, released on 15 September, 1988. Produced by Carlos Alomar, this was the second of only 2 Soda Stereo albums produced by someone outside the musical group, with the other being Soda Stereo, the eponymous debut album produced by Federico Moura of Virus."
+    },
+
+    {
+        "id": 5,
+        "title": "Elvis Presley",
+        "band": "Elvis Presley",
+        "price": 20,
+        "year": 1956,
+        "imgName": "elvis_presley",
+        "desc": "Elvis Presley (released in the UK as Elvis Presley Rock n' Roll[7]) is the debut studio album by American rock and roll singer Elvis Presley. It was released by RCA Victor, on March 23, 1956,[8] (catalog number LPM-1254). The recording sessions took place on January 10 and January 11 at the RCA Victor Studios in Nashville, Tennessee, and on January 30 and January 31 at the RCA Victor studios in New York. Additional material originated from sessions at Sun Studio in Memphis, Tennessee, on July 5, August 19 and September 10, 1954, and on July 11, 1955."
+    },
+    {
+        "id": 6,
+        "title": "La Fabbrica di Plastica",
+        "band": "Gianluca Grignani",
+        "price": 20,
+        "year": 1996,
+        "imgName": "la_fabbrica_di_plastica",
+        "desc": "His musical career took off after meeting guitarist and producer Massimo Luca. After Grignani performed in the 1994 Festival di Sanremo, PolyGram persuaded him to release the acoustic ballad \"La mia storia tra le dita\" In 1995, Grignani managed a breakthrough with the album Destinazione Paradiso, which sold two million copies within a year, and for which he was awarded the Telegatto. \"La mia storia tra le dita\" became a number-one hit all over Iberoamerica and other countries in Europe. He released a Spanish-language version called \"Mi historia entre tus dedos\"."
+    },
+    {
+        "id": 7,
+        "title": "Love",
+        "band": "The Cult",
+        "price": 20,
+        "year": 1985,
+        "imgName": "love",
+        "desc": "Love is the second studio album by English rock band the Cult, released on 18 October 1985 by Beggars Banquet Records. The album was the band's commercial breakthrough, reaching number four in the UK and staying on the chart for 22 weeks. It produced three Top 40 singles in the UK, \"She Sells Sanctuary\", \"Rain\", and \"Revolution\". It has been released in nearly 30 countries and sold an estimated 2.5 million copies. Love was recorded at Jacob's Studios in Farnham, Surrey, in July and August 1985."
+    },
+    {
+        "id": 8,
+        "title": "Out of Our Heads",
+        "band": "The Rolling Stones",
+        "price": 35,
+        "year": 1965,
+        "imgName": "out_of_our_heads",
+        "desc": "Out of Our Heads is a 1965 album by the English rock band the Rolling Stones, released in two editions with different covers and track listings. In the US, London Records released it on 30 July 1965 as the band's fourth American album, while Decca Records released its UK edition on 24 September 1965 as the third British album."
+    },
+    {
+        "id": 9,
+        "title": "A Roma Nostra",
+        "band": "Gabriella Ferri",
+        "price": 40,
+        "year": 1970,
+        "imgName": "roma_nostra",
+        "desc": "Ferri's career began in a Milan nightclub in 1963. By 1965, she had broken into the Rome singing scene by singing popular Roman songs, thereby becoming an icon of Romanesco singing. One of her biggest hits was \"Sempre\". During her career, she also performed Neapolitan and Latin American pieces. During the 1970s, she starred in several popular TV shows. By the 1990s, however, she had largely left the spotlight."
+    },
+    {
+        "id": 10,
+        "title": "Sgt. Pepper's Lonely Hearts Club Band",
+        "band": "the Beatles.",
+        "price": 55,
+        "year": 1966,
+        "imgName": "sgt_pepper",
+        "desc": "Sgt. Pepper's Lonely Hearts Club Band is the eighth studio album by the English rock band the Beatles. Released on 26 May 1967,[nb 1] Sgt. Pepper is regarded by musicologists as an early concept album that advanced the roles of sound composition, extended form, psychedelic imagery, record sleeves, and the producer in popular music. The album had an immediate cross-generational impact and was associated with numerous touchstones of the era's youth culture, such as fashion, drugs, mysticism, and a sense of optimism and empowerment. Critics lauded the album for its innovations in songwriting, production and graphic design, for bridging a cultural divide between popular music and high art, and for reflecting the interests of contemporary youth and the counterculture."
+    },
+    {
+        "id": 11,
+        "title": "Urban Hymns",
+        "band": " The Verve",
+        "price": 20,
+        "year": 1985,
+        "imgName": "urban_hymns",
+        "desc": "Urban Hymns is the third studio album by English alternative rock band the Verve, released on 29 September 1997 on Hut Records. It earned nearly unanimous critical praise upon its release, and went on to become the band's best-selling release and one of the biggest selling albums of the year. As of 2019, Urban Hymns is ranked the 19th best-selling album in UK chart history[6] and has sold over ten million copies worldwide.[7] This is the only Verve album to feature guitarist and keyboardist Simon Tong, who initially joined the band to replace their original guitarist Nick McCabe. McCabe rejoined the band soon after, however, and Tong remained in the band also considered as the fifth member; this makes the album the only one that the band recorded as a five-piece."
+    },
+    {
+        "id": 12,
+        "title": "Whitney Houston",
+        "band": "Whitney Houston",
+        "price": 25,
+        "year": 1987,
+        "imgName": "whitney",
+        "desc": "Whitney is the second studio album by American singer Whitney Houston, released on June 2, 1987, by Arista Records as the follow-up to her debut album. The album features five top 10 hits on the US Billboard Hot 100, which also became international hits. The album's first four singles—\"I Wanna Dance with Somebody (Who Loves Me)\", \"Didn't We Almost Have It All\", \"So Emotional\" and \"Where Do Broken Hearts Go\"—all peaked at number one on the US Hot 100, making her the first female act to achieve four number-one hits from one album."
+    }
+]

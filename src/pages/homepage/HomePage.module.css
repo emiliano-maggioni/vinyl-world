@@ -1,0 +1,39 @@
+@import "Globals.css";
+
+.container{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+}
+
+.topbar{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.2rem 0rem 2.3rem 0rem;
+}
+
+.topbar > div{
+  width: 100%;
+}
+
+.topbar > div:first-child{
+  margin-bottom:1.8rem;
+}
+
+
+  @media screen and (min-width: 768px) {
+    .topbar{
+      justify-content: space-between;
+    }
+    .topbar > div:first-child{
+      width: auto;
+      flex: 1;
+      max-width: 30rem;
+    }
+    .topbar > div:last-child{
+      max-width: 15rem;
+      margin-left: 1rem;
+    }
+  }

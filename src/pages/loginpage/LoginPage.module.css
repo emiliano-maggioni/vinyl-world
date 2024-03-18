@@ -1,0 +1,47 @@
+@import "Globals.css";
+
+.container{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 0.4rem;
+    width: 100%;
+    /* border: 1px solid var(--black); */
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    row-gap: 0.6rem;
+    text-align: center;
+}
+
+.form > div{
+    padding: 0.8rem 0rem;
+}
+
+.form > div:nth-child(even){
+    background: var(--grayLight2);
+}
+
+.title{
+    font-size: 1.76rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin: 0.44rem 0rem 0.24rem 0rem;
+    font-family: var(--font1);
+}
+
+.btContainer{
+    padding: 0.55rem 0rem;
+}
+
+.btContainer{
+
+}
+
+.btContainer > button{
+    padding: 0.4rem 4.4rem;
+}
